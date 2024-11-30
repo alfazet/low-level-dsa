@@ -1,5 +1,5 @@
 /*
-(Min) heap
+Max heap
 */
 
 #ifndef HEAP_H
@@ -12,7 +12,7 @@
 struct Heap {
   int *a;
   int cap;
-  int ptr; // points to the first empty space
+  int sz; // points to the first empty space
 };
 typedef struct Heap Heap;
 

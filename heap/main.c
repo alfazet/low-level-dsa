@@ -9,13 +9,17 @@ int main() {
   insert(h, 7);
   insert(h, 6);
   insert(h, 9);
+  printf("Max: %d, not popped\n", peek(h));
+  printf("Max: %d, popped\n", pop(h));
+  printf("Max: %d, popped\n", pop(h));
+  printf("Max: %d, popped\n", pop(h));
+  printf("Max: %d, popped\n", pop(h));
 
-  printf("Min: %d\n", pop(h));
-  printf("Min: %d\n", pop(h));
-  printf("Min: %d\n", pop(h));
-  printf("Min: %d\n", pop(h));
-  printf("Min (wasn't removed): %d\n", peek(h));
-  printf("Min (wasn't removed): %d\n", peek(h));
+  insert(h, 4);
+  printf("Max: %d, not popped\n", peek(h));
+  printf("Max: %d, popped\n", pop(h));
+  printf("Max: %d, not popped\n", peek(h));
+  printf("Max: %d, popped\n", pop(h));
 
   free_heap(h);
 
