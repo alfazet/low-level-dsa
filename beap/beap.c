@@ -61,7 +61,7 @@ void down_beap(Beap *b, int k) {
   k = k + i;
   i = i + 1;
   while (k <= b->sz) {
-    if (k < b->sz &&
+    if (k + 1 <= b->sz &&
         (b->a[k + 1] > b->a[k])) { // go to the larger child if possible
       k = k + 1;
     }
@@ -76,7 +76,7 @@ void down_beap(Beap *b, int k) {
   }
 }
 
-int pop(Beap *b) {
+int delete_max(Beap *b) {
   if (b->sz == 0) {
     return INT_MIN; // empty beap
   }
@@ -88,7 +88,7 @@ int pop(Beap *b) {
   return ret_val;
 }
 
-int peek(Beap *b) { return (b->sz == 0 ? INT_MIN : b->a[1]); }
+int get_max(Beap *b) { return (b->sz == 0 ? INT_MIN : b->a[1]); }
 
 int search(Beap *b, int x) {
   int h = 0;

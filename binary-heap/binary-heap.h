@@ -1,9 +1,9 @@
 /*
-Max heap
+Max binary heap
 */
 
-#ifndef HEAP_H
-#define HEAP_H
+#ifndef BINARYHEAP_H
+#define BINARYHEAP_H
 
 #include <limits.h>
 #include <stdio.h>
@@ -12,14 +12,14 @@ Max heap
 struct Heap {
   int *a;
   int cap;
-  int sz; // points to the first empty space
+  int sz; // points to the last element
 };
 typedef struct Heap Heap;
 
 Heap *init_heap(int n);
 void insert(Heap *h, int val);
-int pop(Heap *h);
-int peek(Heap *h);
+int delete_max(Heap *h);
+int get_max(Heap *h);
 void free_heap(Heap *h);
 
-#endif // HEAP_H
+#endif // BINARYHEAP_H

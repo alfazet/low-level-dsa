@@ -14,20 +14,20 @@ int main() {
   printf("17 found at index %d\n", search(b, 17)); 
   printf("9 found at index %d\n", search(b, 9)); 
 
-  printf("Max: %d, not popped\n", peek(b));
-  printf("Max: %d, popped\n", pop(b));
+  printf("Max: %d, not deleted\n", get_max(b));
+  printf("Max: %d, deleted\n", delete_max(b));
   printf("9 found at index %d\n", search(b, 9)); 
-  printf("Max: %d, popped\n", pop(b));
-  printf("Max: %d, popped\n", pop(b));
-  printf("Max: %d, popped\n", pop(b));
+  printf("Max: %d, deleted\n", delete_max(b));
+  printf("Max: %d, deleted\n", delete_max(b));
+  printf("Max: %d, deleted\n", delete_max(b));
 
   insert(b, 4);
-  printf("Max: %d, not popped\n", peek(b));
+  printf("Max: %d, not deleted\n", get_max(b));
   printf("4 found at index %d\n", search(b, 4)); 
   printf("2 found at index %d\n", search(b, 2)); 
-  printf("Max: %d, popped\n", pop(b));
-  printf("Max: %d, not popped\n", peek(b));
-  printf("Max: %d, popped\n", pop(b));
+  printf("Max: %d, deleted\n", delete_max(b));
+  printf("Max: %d, not deleted\n", get_max(b));
+  printf("Max: %d, deleted\n", delete_max(b));
 
   free_beap(b);
 

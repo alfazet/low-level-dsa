@@ -1,6 +1,6 @@
 COMPILER=clang
 FLAGS=-Wall -g -o
-NAME=heap
+NAME=binary-heap
 
 .PHONY: all
 all: main.out

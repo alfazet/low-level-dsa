@@ -1,4 +1,4 @@
-#include "heap.h"
+#include "binary-heap.h"
 
 Heap *init_heap(int n) {
   Heap *h = malloc(sizeof(Heap));
@@ -42,7 +42,7 @@ void down_heap(Heap *h, int i) {
   down_heap(h, max_i);
 }
 
-int pop(Heap *h) {
+int delete_max(Heap *h) {
   if (h->sz == 0) {
     return INT_MIN; // empty heap
   }
@@ -54,7 +54,7 @@ int pop(Heap *h) {
   return ret_val;
 }
 
-int peek(Heap *h) { return (h->sz == 0 ? INT_MIN : h->a[1]); }
+int get_max(Heap *h) { return (h->sz == 0 ? INT_MIN : h->a[1]); }
 
 void free_heap(Heap *h) {
   free(h->a);
