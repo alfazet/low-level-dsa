@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 #define RADIX_BIN 2
 #define RADIX_ALPHA 26
@@ -8,9 +7,6 @@
 
 int bit_int(unsigned x, int i);
 int bit_string(char *s, int i);
-
-void print_arr_int(unsigned *a, int n);
-void print_arr_string(char **a, int n);
 
 void radix_sort_int(unsigned *a, int n);
 void radix_sort_string(char **a, int n);

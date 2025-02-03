@@ -1,4 +1,17 @@
 #include "radix_sort.h"
+#include <time.h>
+
+void print_arr_int(unsigned *a, int n) {
+  for (int i = 1; i <= n; i++)
+    printf("%u ", a[i]);
+  printf("\n");
+}
+
+void print_arr_string(char **a, int n) {
+  for (int i = 1; i <= n; i++)
+    printf("%s ", a[i]);
+  printf("\n");
+}
 
 int main() {
   srand(time(NULL));

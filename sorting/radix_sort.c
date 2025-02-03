@@ -5,18 +5,6 @@ int bit_int(unsigned x, int i) {
 }
 int bit_char(char *s, int i) { return (int)(s[i] - 'a'); }
 
-void print_arr_int(unsigned *a, int n) {
-  for (int i = 1; i <= n; i++)
-    printf("%u ", a[i]);
-  printf("\n");
-}
-
-void print_arr_string(char **a, int n) {
-  for (int i = 1; i <= n; i++)
-    printf("%s ", a[i]);
-  printf("\n");
-}
-
 void radix_sort_int(unsigned *a, int n) {
   unsigned *tmp = malloc((n + 1) * sizeof(unsigned));
   for (int b = 0; b < MAX_LEN; b++) {
