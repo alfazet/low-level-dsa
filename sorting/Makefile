@@ -1,6 +1,6 @@
 COMPILER=clang
 FLAGS=-Wall -g -o
-NAME=leftist-heap
+NAME=radix_sort
 
 .PHONY: all
 all: main.out

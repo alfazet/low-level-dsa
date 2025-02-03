@@ -1,6 +1,6 @@
 COMPILER=clang
 FLAGS=-Wall -g -o
-NAME=binary-heap
+NAME=leftist_heap
 
 .PHONY: all
 all: main.out

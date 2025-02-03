@@ -1,4 +1,4 @@
-#include "binary-heap.h"
+#include "binary_heap.h"
 
 int main() {
   Heap *h = init_heap(6);

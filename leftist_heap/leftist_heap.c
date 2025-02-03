@@ -1,4 +1,4 @@
-#include "leftist-heap.h"
+#include "leftist_heap.h"
 
 Node *meld(Node *a, Node *b) {
   if (a == NULL)

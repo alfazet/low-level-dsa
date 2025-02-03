@@ -1,4 +1,4 @@
-#include "binary-heap.h"
+#include "binary_heap.h"
 
 Heap *init_heap(int n) {
   Heap *h = malloc(sizeof(Heap));

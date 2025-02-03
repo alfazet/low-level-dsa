@@ -1,4 +1,4 @@
-#include "leftist-heap.h"
+#include "leftist_heap.h"
 
 int main() {
   Node* a = NULL;
